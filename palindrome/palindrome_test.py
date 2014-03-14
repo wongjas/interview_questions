@@ -12,6 +12,7 @@ class testPalindrome(unittest.TestCase):
         self.nonpalin1 = "jason"
         self.nonpalin2 = "hello"
         self.nonpalin3 = "leool"
+        self.nonpalin4 = "looasool"
         self.puncpalin1 = "Pooh animals slam in a hoop."
         self.puncpalin2 = "Nail a tired rotini in it, order Italian!"
         self.puncpalin3 = "Zeus was deified, saw Suez."
@@ -23,6 +24,7 @@ class testPalindrome(unittest.TestCase):
         self.assertFalse(pal.palindrome(self.nonpalin1))
         self.assertFalse(pal.palindrome(self.nonpalin2))
         self.assertFalse(pal.palindrome(self.nonpalin3))
+        self.assertFalse(pal.palindrome(self.nonpalin4))
 
     def testPalindromeWithPunc(self):
         self.assertTrue(pal.palindrome_with_punc(self.puncpalin1))
