@@ -23,10 +23,9 @@ class Point():
 
 # ListOfPoints -> ListOfPoints
 def threeClosest(points):
-    [sys.stdout.write(p) for p in points]
-    ptsWithDist= [p.shortestDistance() for p in points]
+    ptsWithDist = [p.shortestDistance() for p in points]
     ptsWithDist.sort()
-    return ptsWithDist[0:2]
+    return ptsWithDist[0:3]
     
 if __name__ == '__main__':
     threeClosest()
