@@ -18,7 +18,7 @@ def palindrome_with_punc(str):
     # remove all spaces
     strNoSpaces = remove_spaces(str)
     # remove all punctuation
-    rawString = remove_punc(strNoSpaces.replace)
+    rawString = remove_punc(strNoSpaces)
     # lowercase
     return palindrome(rawString.lower())
 
@@ -28,9 +28,10 @@ def palindrome(str):
     strLength = str.__len__()
     for i in range(0, strLength - 1):
         if str[i] == str[strLength -1 - i]:
-            return True
+            continue
         else:
             return False
+    return True
 
 if __name__ == "__main__":
     palindrome()
