@@ -1,4 +1,4 @@
-#/usr/bin/python
+#!/usr/bin/python
 
 import unittest
 import palindrome as pal

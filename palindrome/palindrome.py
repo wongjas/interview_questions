@@ -1,4 +1,4 @@
-#/usr/bin/python
+#!/usr/bin/python
 
 # How to figure out if a string is a palindrome
 
